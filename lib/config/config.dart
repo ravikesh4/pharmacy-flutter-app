@@ -16,3 +16,4 @@ Future<dynamic> goto(BuildContext context, Widget page,
     );
   }
 }
+var image = '';

@@ -7,6 +7,7 @@ Widget adsSlideCardComponent(
   return Container(
     height: 150,
     padding: EdgeInsets.only(left: 15, right: 5),
+    margin: EdgeInsets.only(right: 15, top: 15),
     width: MediaQuery.of(context).size.width * 0.8,
     decoration: BoxDecoration(
       color: colors,
@@ -37,8 +38,10 @@ Widget adsSlideCardComponent(
           ),
         ),
         imageUrl == null
-            ? Image.asset('assets/images/ads1.png')
-            : Image.network(imageUrl),
+            ? Container(
+            alignment: Alignment.bottomRight,
+            child: Image.asset('assets/images/ads1.png', width: 140, alignment: Alignment.bottomRight,))
+            : Image.network(imageUrl, width: 140, alignment: Alignment.bottomRight,),
       ],
     ),
   );

@@ -27,6 +27,7 @@ dependencies:
   intro_slider: ^2.4.2
   awesome_dialog: ^2.0.0
   otp_screen: ^0.0.3
+  persistent_bottom_nav_bar: ^4.0.2
 
 dev_dependencies:
   flutter_test:
@@ -47,6 +48,7 @@ flutter:
     - assets/images/
     - assets/images/products/
     - assets/images/phone_number.png
+    - assets/images/fruit-Doctor.png
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
   # For details regarding adding assets from package dependencies, see

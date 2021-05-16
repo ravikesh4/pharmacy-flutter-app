@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:pharmacy/utils/customButton.dart';
 import 'package:pharmacy/utils/inputfield.dart';
 
+var image;
 class ForgetPassword extends StatefulWidget {
   @override
   _ForgetPasswordState createState() => _ForgetPasswordState();
