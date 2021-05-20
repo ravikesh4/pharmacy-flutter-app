@@ -17,7 +17,6 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  GlobalKey<ScaffoldState> drawerKey = new GlobalKey<ScaffoldState>();
   PersistentTabController _controller;
 
   List<Widget> _buildScreens() {
@@ -158,22 +157,18 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
     return Scaffold(
-      key: drawerKey,
       appBar: AppBar(
         centerTitle: true,
         elevation: 0,
         // backgroundColor: Colors.white,
-        // leading: InkWell(
-        //   onTap: () => drawerKey.currentState.openDrawer(),
-        //   child: Icon(Icons.menu_rounded),
-        // ),
+        // leading: Image.asset('assets/images/open_capsule.png'),
         title: Text(
           _getTitle(),
           style: theme.textTheme.headline6.copyWith(color: Colors.white),
         ),
-        // actions: [
-        //   _getActions(),
-        // ],
+        actions: [
+          _getActions(),
+        ],
       ),
       body: PersistentTabView(
         context,
@@ -226,7 +221,7 @@ class _HomeScreenState extends State<HomeScreen> {
           return false;
         },// Choose the nav bar style with this property.
       ),
-      endDrawer: drawerComponent(context),
+      drawer: drawerComponent(context),
     );
   }
 }

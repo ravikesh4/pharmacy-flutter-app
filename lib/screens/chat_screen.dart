@@ -29,7 +29,7 @@ class _CHatScreenState extends State<CHatScreen> {
             ),
           ),
           Container(
-            color: blue,
+            // color: blue,
             child: Text('Hello'),
           )
         ],
