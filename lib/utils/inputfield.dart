@@ -6,7 +6,7 @@ class InputField extends StatelessWidget {
   final double height;
   final Color backgroundColor;
   final double borderRadius;
-
+  final Icon prefixIcons;
   final EdgeInsets margin;
   final EdgeInsets contentPadding;
   final String helpText;
@@ -30,6 +30,7 @@ class InputField extends StatelessWidget {
   const InputField({
     Key key,
     this.margin,
+    this.prefixIcons,
     this.borderRadius,
     this.backgroundColor,
     this.contentPadding,
@@ -80,6 +81,7 @@ class InputField extends StatelessWidget {
                       : suffixWidget,
                   border: InputBorder.none,
                   prefix: prefix,
+            prefixIcon: prefixIcons,
                 )
               : decoration,
           maxLines: maxLines ?? 1,
